@@ -6,22 +6,162 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1a1a1a;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.text-gradiant {
+  background: -webkit-linear-gradient(136deg, #525252, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading {
+  font-size: 56px;
+}
+.mask {
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 15%,
+    white 85%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.three {
+  box-shadow: -1px -2px 1px #464646c7, 1px 4px 1px #000000c7;
+}
+.scroll-animation {
+  animation: scroll-animation 30s linear infinite;
+}
+.scroll-animation:hover {
+  animation-play-state: paused;
+}
+.background {
+  background: url(./assets/background.png);
+}
+.bg-gradient {
+  background: linear-gradient(212deg, #252525 0%, rgba(26, 26, 26, 1) 100%);
+}
+@keyframes scroll-animation {
+  to {
+    transform: translateX(calc(5px - 50%));
   }
+}
+img {
+  max-width: unset;
+}
+.bg-footer {
+  background: radial-gradient(#ffffff, #80808005);
+}
+.bg-blur {
+  filter: blur(10px);
+}
+.bg-s-big {
+  background-size: 40px 40px;
+}
+.animated-bg {
+  background: radial-gradient(#ffffff, #80808000);
+  background-position: left top;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  animation: bg-animation 5s linear infinite;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: left top;
+  }
+  42.4% {
+    background-position: right top;
+  }
+  49.65% {
+    background-position: right bottom;
+  }
+  91.76% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+span {
+  opacity: 1;
+}
+.three img {
+  animation: rotate 4s linear infinite;
+  animation-play-state: paused;
+}
+.three:hover img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pop-in {
+  translate: 30% 10%;
+  scale: 0;
+  transition: all 0.5s linear;
+}
+.show {
+  translate: 0% 0%;
+  scale: 1;
+}
+.stack::after {
+  position: absolute;
+  content: "";
+
+  background: linear-gradient(
+    89deg,
+    rgba(0, 0, 0, 0.54) 39.28%,
+    transparent 95.39%
+  );
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  right: auto;
+  top: auto;
+  width: 60vw;
+}
+.stack img {
+  position: absolute;
+  width: 100svw;
+  height: 100svh;
+  object-fit: cover;
+}
+.masked{
+  -webkit-mask: radial-gradient(
+    circle at var(--x, 0) var(--y, 0),
+    #fff,
+    transparent 50px
+  );
+}
+.background-glow {
+ 
+}
+.background-glow div {
+  background-image: radial-gradient(
+    circle at var(--x, 0) var(--y, 0),
+    #ffffff90,
+    transparent 50px
+  );
+
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-glow div::after {
+  content: "";
+  position: absolute;
+
+  height: 95%;
+  width: 95%;
+  background: #222222a4;
+  backdrop-filter: blur(0px);
 }

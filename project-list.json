@@ -1,0 +1,39 @@
+[
+    {
+        "id":1,
+        "title":"encation",
+        "description":" landing page developed with html css and javaScript from figma design ",
+        "link":"https://encantio-web.netlify.app/",
+        "github":"https://github.com/NatanPro2016/encantio",
+        "img":"/project-1.png"
+
+    },
+    {
+        "id":2,
+        "title":"encation",
+        "description":" landing page developed with html css and javaScript from figma design ",
+        "link":"https://encantio-web.netlify.app/",
+        "github":"https://github.com/NatanPro2016/encantio",
+        "img":"/project-2.png"
+
+    },
+    {
+        "id":3,
+        "title":"encation",
+        "description":" landing page developed with html css and javaScript from figma design ",
+        "link":"https://encantio-web.netlify.app/",
+        "github":"https://github.com/NatanPro2016/encantio",
+        "img":"/project-3.png"
+
+    },
+    {
+        "id":4,
+        "title":"encation",
+        "description":" landing page developed with html css and javaScript from figma design ",
+        "link":"https://encantio-web.netlify.app/",
+        "github":"https://github.com/NatanPro2016/encantio",
+        "img":"/projects.png"
+
+    }
+
+]
