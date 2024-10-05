@@ -17,15 +17,17 @@ const TextParallax = () => {
       className="min-h-screen w-full flex-col flex items-center justify-center overflow-hidden"
       ref={ref}
     >
-      <motion.h1 className="heading text-gradiant" style={{ x }}>
+      <motion.h1 className="heading text-gradiant text-center" style={{ x }}>
         Are You Rady To Hire
       </motion.h1>
-      <motion.h1 className="heading text-gradiant" style={{ x: x2 }}>
+      <motion.h1
+        className="heading text-gradiant text-center "
+        style={{ x: x2 }}
+      >
         Somemone Professional
       </motion.h1>
-      <div className={`translate-y-60 opacity-0 transition-all1 ` }>
-
-      <AnimatedBtn />
+      <div className={`translate-y-60 opacity-0 transition-all1 `}>
+        <AnimatedBtn />
       </div>
     </div>
   );

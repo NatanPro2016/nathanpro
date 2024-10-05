@@ -1,25 +1,11 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
-
-import AnimatedBtn from "./AnimatedBtn";
+import React, { useEffect, useRef, useState } from "react";
+import Nav from "./Nav";
 
 const Hero = () => {
   const background = useRef<HTMLDivElement>(null);
-  const contaner = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    for (let i = 300; i >= 0; i--) {
-      const card = document.createElement("div");
-      card.classList.add(
-        "h-[75.44px]",
-        "w-full",
-        "min-w-[62px]",
-        "max-w-[75px]",
-        "bg-[#1A1A1A]"
-      );
-      contaner?.current?.appendChild(card);
-    }
-  }, [contaner]);
+
   const handleHover = (e: any) => {
     background?.current?.style.setProperty("--x", e.clientX + "px");
     background?.current?.style.setProperty("--y", e.clientY + "px");
@@ -31,35 +17,19 @@ const Hero = () => {
       ref={background}
       onMouseMove={handleHover}
     >
-      <nav className="flex justify-between max-w-[1280px] w-full mx-auto p-4 items-center ">
-        <a href="/" className="text-white ">
-          Nathan Pro <br />
-          <span> Web Developer</span>
-        </a>
-        <ul className="flex gap-[40px]">
-          <li>
-            <a href="#projects" className="text-white">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#Services" className="text-white">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#abput" className="text-white">
-              About
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div
-        className="bg-light-background gap-2 flex flex-wrap h-full w-full absolute z-[-100] overflow-hidden background-glow "
-        ref={contaner}
-      ></div>
+      <Nav />
+      <div className="bg-light-background gap-[4px] h-full w-full absolute z-[-100] overflow-hidden background-glow ">
+        {[...Array(300)].map((_, i) => {
+          return (
+            <div
+              key={i}
+              className="max-w-[62px] w-full h-[75.44px] bg-[#1A1A1A]"
+            ></div>
+          );
+        })}
+      </div>
 
-      <div className="flex pointer-events-none items-center justify-center flex-col h-full w-full text-center">
+      <div className="flex pointer-events-none items-center justify-center flex-col h-full w-full text-center p-4">
         <img
           src="/radial.png"
           alt=""
@@ -80,7 +50,12 @@ const Hero = () => {
           designed to deliver seamless user experiences across devices
         </p>
         <div className="mt-4">
-          <AnimatedBtn />
+          <a
+            href=""
+            className="px-4 text-bold  cursor-pointer py-2 rounded-full bg-white text-black"
+          >
+            Email Me
+          </a>
         </div>
       </div>
     </div>

@@ -29,9 +29,9 @@ const Project = ({ id, title, description, link, github, img }: props) => {
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
       </div>
-      <div className="h-[524px] max-w-[622px] overflow-hidden rounded-[6px]">
+      <div className="sm:h-[524px] h-[450px] max-w-[622px] overflow-hidden rounded-[6px]">
         <motion.div
-          className="relative h-[524px] w-[622px] bottom-[150px]"
+          className="relative h-full w-full bottom-[150px]"
           style={{ y }}
         >
           <Image
@@ -39,7 +39,7 @@ const Project = ({ id, title, description, link, github, img }: props) => {
             alt="project"
             fill
             sizes="(max-width:622px) , 100vw , 1000px"
-            className="h-[524px] w-[622px] object-cover rounded-[6px] mx-[5px] border border-[#ffffff00] "
+            className="h-full w-full object-cover rounded-[6px] mx-[5px] border border-[#ffffff00] "
           />
         </motion.div>
       </div>

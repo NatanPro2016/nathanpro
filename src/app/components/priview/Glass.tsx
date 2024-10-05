@@ -37,11 +37,8 @@ const Glass = () => {
           <span className="text-white text-[80px]">Effect</span>
         </div> */}
       {/* </motion.div> */}
-      <div className="max-w-[300px] w-full h-[250px] bg-[#6c6b6b12] backdrop-blur-md rounded-lg flex flex-col items-center justify-center">
-        <p className="heading text-gradiant w-56 text-[60px] opacity-60">
-          Glass
-        </p>
-        <span className="text-white text-[80px]">Effect</span>
+      <div className="max-w-[350px] w-full h-[250px] bg-[#ffffff0a] backdrop-blur-md rounded-lg flex flex-col items-center justify-center">
+   
       </div>
     </div>
   );

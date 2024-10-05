@@ -6,10 +6,10 @@ const Footer = () => {
     <div className="w-full bg-[#121212] h-[380px] ">
       <div className="flex w-full justify-center items-center  h-[100px] py-[1px] bg-footer bg-white">
         <div className="w-full h-full  bg-[#121212] justify-center items-center flex gap-2">
-          <p className="text-white opacity-80 text-[18px]">
+          <p className="text-white opacity-80 text-[18px] hidden lg:flex">
             Interested in working with me? Send me a message
           </p>
-          <AnimatedBtn  />
+          <AnimatedBtn />
         </div>
       </div>
       <div className="flex w-full flex-col items-center text-[#827D7D] text-center gap-[56px]">

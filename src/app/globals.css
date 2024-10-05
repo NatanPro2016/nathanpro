@@ -9,6 +9,14 @@
 body {
   background-color: #1a1a1a;
 }
+::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 10%);
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
 
 .text-gradiant {
   background: -webkit-linear-gradient(136deg, #525252, #fff);
@@ -17,6 +25,34 @@ body {
 }
 .heading {
   font-size: 56px;
+}
+@media (max-width: 1100px) {
+  .heading {
+    font-size: 56px;
+  }
+}
+@media (max-width: 900px) {
+  .heading {
+    font-size: 41px;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    font-size: 36px;
+  }
+}
+.nav-line {
+  height: 2px;
+  width: 18px;
+  background: #d6d6d6b1;
+  transition: all 0.3s ease-in-out;
+}
+.nav-line.active {
+  transform: rotateZ(45deg) translateY(7px);
+}
+
+.nav-line.active.reverse {
+  transform: rotateZ(-45deg) translateY(-7px);
 }
 .mask {
   -webkit-mask: linear-gradient(
@@ -132,7 +168,7 @@ span {
   height: 100svh;
   object-fit: cover;
 }
-.masked{
+.masked {
   -webkit-mask: radial-gradient(
     circle at var(--x, 0) var(--y, 0),
     #fff,
@@ -140,13 +176,18 @@ span {
   );
 }
 .background-glow {
- 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
+
 .background-glow div {
   background-image: radial-gradient(
     circle at var(--x, 0) var(--y, 0),
-    #ffffff90,
-    transparent 50px
+    hsl(0 0% 100% /0.175),
+    hsl(0 0% 100% /0.0125) 3rem
   );
 
   background-attachment: fixed;
@@ -155,13 +196,35 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* min-height: 64px;
+  min-width: 64px; */
+  position: relative;
+  width: 100%;
 }
+
 .background-glow div::after {
   content: "";
   position: absolute;
 
-  height: 95%;
-  width: 95%;
-  background: #222222a4;
-  backdrop-filter: blur(0px);
+  background-image: radial-gradient(
+    circle at var(--x, 0) var(--y, 0),
+    #ffffff71,
+    #ffffff00 3rem
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
+}
+.background-glow div::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(39, 39, 39, 0.072);
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: blur(20px);
 }
