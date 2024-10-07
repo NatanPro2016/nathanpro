@@ -1,5 +1,6 @@
 import React from "react";
 import AnimatedBtn from "./AnimatedBtn";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -45,7 +46,9 @@ const Footer = () => {
         <ul className="flex gap-[20px] w-full justify-center">
           <li>
             <a href="https://github.com/NatanPro2016/NatanPro2016/">
-              <img
+              <Image
+                height={25}
+                width={25}
                 src="/github-social.png"
                 alt=""
                 className="opacity-80 hover:opacity-100 transition-all"
@@ -54,7 +57,9 @@ const Footer = () => {
           </li>
           <li>
             <a href="">
-              <img
+              <Image
+                height={25}
+                width={25}
                 src="/instagram.png"
                 alt=""
                 className="opacity-80 hover:opacity-100 transition-all"
@@ -63,8 +68,10 @@ const Footer = () => {
           </li>
           <li>
             <a href="">
-              <img
+              <Image
                 src="/linkedIn.png"
+                height={25}
+                width={25}
                 alt=""
                 className="opacity-80 hover:opacity-100 transition-all"
               />

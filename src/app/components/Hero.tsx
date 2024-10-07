@@ -1,13 +1,17 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Nav from "./Nav";
 import Lenis from "lenis";
 
+interface CustomMouseEvent extends React.MouseEvent<HTMLDivElement> {
+  clientX: number;
+  clientY: number;
+}
 const Hero = () => {
   const background = useRef<HTMLDivElement>(null);
 
-  const handleHover = (e: any) => {
+  const handleHover = (e: CustomMouseEvent) => {
     background?.current?.style.setProperty("--x", e.clientX + "px");
     background?.current?.style.setProperty("--y", e.clientY + "px");
     console.log();
@@ -15,7 +19,7 @@ const Hero = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
-    function raf(time: any) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
@@ -41,9 +45,11 @@ const Hero = () => {
       </div>
 
       <div className="flex items-center justify-center flex-col h-full w-full text-center p-4">
-        <img
+        <Image
           src="/radial.png"
           alt=""
+          height={675}
+          width={675}
           className="h-[657px] max-w-[657px] w-full absolute pointer-events-none opacity-5"
         />
         <Image
@@ -66,7 +72,13 @@ const Hero = () => {
             className="px-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black"
           >
             Email Me
-            <img src="/arrow-right.png" alt="" className="w-4" />
+            <Image
+              src="/arrow-right.png"
+              width={16}
+              height={16}
+              alt=""
+              className="w-4"
+            />
           </a>
         </div>
       </div>

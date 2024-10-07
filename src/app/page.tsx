@@ -5,10 +5,7 @@ import { Inter } from "next/font/google";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
-import ThreeD from "./components/priview/ThreeD";
-import Parallax from "./components/priview/Parallax";
 import TextParallax from "./components/priview/TextParallax";
-import Glass from "./components/priview/Glass";
 
 const inter = Inter({ subsets: ["latin"] });
 

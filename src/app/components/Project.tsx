@@ -1,5 +1,5 @@
 "use client";
-import { motion, progress, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
 interface props {
@@ -55,10 +55,22 @@ const Project = ({ id, title, description, link, github, img }: props) => {
         </div>
         <div className="links h-full flex flex-col justify-center gap-4 z-20">
           <a href={link}>
-            <img src="/arrow.png" alt="" className="p-1" />
+            <Image
+              src="/arrow.png"
+              height={30}
+              width={30}
+              alt=""
+              className="p-1"
+            />
           </a>
           <a href={github}>
-            <img src="./github.png" alt="" className="p-1" />
+            <Image
+              src="/github.png"
+              height={30}
+              width={30}
+              alt=""
+              className="p-1"
+            />
           </a>
         </div>
       </div>

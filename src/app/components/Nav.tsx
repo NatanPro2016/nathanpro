@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+"use clinet";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 1100);
-  window.addEventListener("resize", () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setIsMobile(window.innerWidth <= 1100);
+    });
     setIsMobile(window.innerWidth <= 1100);
-  });
+  }, []);
 
   return (
     <div>
@@ -15,7 +21,13 @@ const Nav = () => {
         }`}
       >
         <a href="/" className="text-white font-bold flex gap-2">
-          <img src="/logo.svg" alt="" className="w-24" />
+          <Image
+            height={96}
+            width={40.56}
+            src="/logo.svg"
+            alt=""
+            className="w-24"
+          />
           <span>
             Nathan Pro <br />
             <span className="text-[#ababab9a] font-thin"> Web Developer</span>
@@ -64,7 +76,13 @@ const Nav = () => {
         >
           <div className="flex justify-between h-[66px] items-center w-full relative z-20">
             <a href="/" className="text-white flex gap-2">
-              <img src="/logo.svg" alt="" className="w-24" />
+              <Image
+                height={96}
+                width={40.56}
+                src="/logo.svg"
+                alt=""
+                className="w-24"
+              />
               <span className="sm:block hidden ">
                 Nathan Pro <br />
                 <span> Web Developer</span>

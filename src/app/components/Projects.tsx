@@ -14,8 +14,8 @@ const Projects = () => {
         <h1 className="heading text-gradiant text-center ">Past Projects</h1>
         <div className="w-full mt-[63px]">
           <ul className="w-full flex flex-wrap justify-center gap-[16px] ">
-            {projectList.map(({ ...other }) => {
-              return <Project {...other} />;
+            {projectList.map((other) => {
+              return <Project {...other} key={other.id} />;
             })}
           </ul>
         </div>

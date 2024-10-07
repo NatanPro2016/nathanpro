@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import React, { useRef } from "react";
-import AnimatedBtn from "../AnimatedBtn";
 
 const TextParallax = () => {
   const ref = useRef(null);
@@ -26,17 +26,21 @@ const TextParallax = () => {
       >
         Somemone Professional
       </motion.h1>
-      <motion.div
-        className={`transition-all1 `}
-        style={{ y: x2 }}
-      >
-       <a
-            href="#"
-            className="px-4 mt-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black"
-          >
-            Email Me
-            <img src="/arrow-right.png" alt="" className="w-4" />
-          </a>
+      <motion.div className={`transition-all1 `} style={{ y: x2 }}>
+        <a
+          href="#"
+          className="px-4 mt-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black"
+        >
+          Email Me
+          <Image
+            sizes="fill"
+            src="/arrow-right.png"
+            height={20}
+            width={20}
+            alt=""
+            className="w-4"
+          />
+        </a>
       </motion.div>
     </div>
   );

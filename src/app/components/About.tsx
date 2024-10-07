@@ -1,9 +1,9 @@
 "use client";
-import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+
+import Image from "next/image";
+import React from "react";
 
 const About = () => {
-  const [opend, setOpen] = useState(false);
   return (
     <div className="w-full bg-dark flex flex-col pb-[90px]" id="about">
       <div className="max-w-[1280px] w-full mx-auto mt-[120px] p-4 xl:p-0">
@@ -13,13 +13,12 @@ const About = () => {
           <div className="flex flex-col relative min-h-[368px] py-[34px] md:py-0 rounded-[24px] justify-center px-[34px] md:px-[64px] xl:w-2/3 bg-gradient overflow-hidden">
             <div className="background w-full h-full absolute top-0 left-0 opacity-5"></div>
             <h1 className="z-10 text-white opacity-80 text-[20px]">
-              I am Nathan
+              I&apos;am Nathan
             </h1>
             <p className="z-10 mt-[30px] text-white max-w-[617.84px] opacity-80">
-              I'm a dedicated front-end developer with a strong focus on
-              crafting responsive and visually appealing user interfaces.
-              Skilled in HTML, CSS, JavaScript, and modern frameworks like
-              React,
+              Im a dedicated front-end developer with a strong focus on crafting
+              responsive and visually appealing user interfaces. Skilled in
+              HTML, CSS, JavaScript, and modern frameworks like React,
             </p>
             <p className="z-10 mt-[30px] text-white max-w-[617.84px] opacity-80">
               I bring designs to life with clean, efficient code. continuously
@@ -28,15 +27,14 @@ const About = () => {
             </p>
           </div>
 
-          <div
-            className="flex justify-center items-center lg:w-1/3 w-full relative bg-gradient rounded-[24px] h-[368px] overflow-hidden "
-            onClick={() => setOpen(true)}
-          >
+          <div className="flex justify-center items-center lg:w-1/3 w-full relative bg-gradient rounded-[24px] h-[368px] overflow-hidden ">
             <div className="background w-full h-full absolute top-0 left-0 w-2/3% opacity-5"></div>
 
-            <img
+            <Image
               src="/profile-image.png"
               alt="nathanpro"
+              height={206}
+              width={206}
               className="w-[206px]"
             />
           </div>
@@ -76,7 +74,13 @@ const About = () => {
             <div className="background w-full h-full absolute top-0 left-0 xl:w-2/ opacity-5 "></div>
             <div className="rounded-[33px] p-[2px] three">
               <span className="bg-[#1D1D1D] h-[68px] w-[238px] rounded-[33px] flex items-center px-[14px] gap-[16px] cursor-pointer ">
-                <img src="./tech-5.png" alt="" className="" />
+                <Image
+                  height={60}
+                  width={60}
+                  src="/tech-5.png"
+                  alt=""
+                  className=""
+                />
 
                 <p className="text-gradiant text-[20px] font-bold opacity-55 ">
                   React Expert
@@ -91,71 +95,71 @@ const About = () => {
             <div className="flex  w-full overflow-hidden mask">
               <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-animation ">
                 <li>
-                  <img src="/tech-1.png" alt="" />
+                  <Image height={60} width={60} src="/tech-1.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-2.png" alt="" />
+                  <Image height={60} width={60} src="/tech-2.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-3.png" alt="" />
+                  <Image height={60} width={60} src="/tech-3.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-4.png" alt="" />
+                  <Image height={60} width={60} src="/tech-4.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-5.png" alt="" />
+                  <Image height={60} width={60} src="/tech-5.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-6.png" alt="" />
+                  <Image height={60} width={60} src="/tech-6.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-7.png" alt="" />
+                  <Image height={60} width={60} src="/tech-7.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-8.png" alt="" />
+                  <Image height={60} width={60} src="/tech-8.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-9.png" alt="" />
+                  <Image height={60} width={60} src="/tech-9.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-10.png" alt="" />
+                  <Image height={60} width={60} src="/tech-10.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-11.png" alt="" />
+                  <Image height={60} width={60} src="/tech-11.png" alt="" />
                 </li>
                 {/* for the loop */}
                 <li>
-                  <img src="/tech-1.png" alt="" />
+                  <Image height={60} width={60} src="/tech-1.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-2.png" alt="" />
+                  <Image height={60} width={60} src="/tech-2.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-3.png" alt="" />
+                  <Image height={60} width={60} src="/tech-3.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-4.png" alt="" />
+                  <Image height={60} width={60} src="/tech-4.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-5.png" alt="" />
+                  <Image height={60} width={60} src="/tech-5.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-6.png" alt="" />
+                  <Image height={60} width={60} src="/tech-6.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-7.png" alt="" />
+                  <Image height={60} width={60} src="/tech-7.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-8.png" alt="" />
+                  <Image height={60} width={60} src="/tech-8.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-9.png" alt="" />
+                  <Image height={60} width={60} src="/tech-9.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-10.png" alt="" />
+                  <Image height={60} width={60} src="/tech-10.png" alt="" />
                 </li>
                 <li>
-                  <img src="/tech-11.png" alt="" />
+                  <Image height={60} width={60} src="/tech-11.png" alt="" />
                 </li>
               </ul>
             </div>
@@ -167,7 +171,7 @@ const About = () => {
           >
             <div className="background w-full h-full absolute top-0 left-0 w-2/3% opacity-5 "></div>
 
-            <img src="./github-big.png" alt="" />
+            <Image height={60} width={60} src="/github-big.png" alt="" />
           </a>
         </div>
       </div>
