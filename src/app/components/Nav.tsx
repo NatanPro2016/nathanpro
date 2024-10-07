@@ -69,7 +69,7 @@ const Nav = () => {
         <div className="background w-full h-full absolute top-0 left-0 opacity-5 z-10"></div>
 
         <div
-          className={`flex flex-col px-4 w-full h-16 bg-[#242424] transition-all overflow-hidden ${
+          className={`flex flex-col px-4 w-full h-66 bg-[#242424] transition-all overflow-hidden ${
             openNav && " h-screen transition-all "
           }`}
           onClick={() => setOpenNav(!openNav)}
@@ -96,31 +96,36 @@ const Nav = () => {
               <div className={`nav-line reverse ${openNav && "active"}`}></div>
             </div>
           </div>
-          <ul className="flex flex-col items-end gap-[40px] mt-[50px] p-3">
-            <li>
-              <a href="#" className="text-white opacity-80">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="text-white opacity-80">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="text-white opacity-80 hover:opacity-100 transition-all"
-              >
-                abouit
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/NatanPro2016/" className="text-white">
-                Github
-              </a>
-            </li>
-          </ul>
+          {openNav && (
+            <ul className="flex flex-col items-end gap-[40px] mt-[50px] p-3">
+              <li>
+                <a href="#" className="text-white opacity-80">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="text-white opacity-80">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="text-white opacity-80 hover:opacity-100 transition-all"
+                >
+                  abouit
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/NatanPro2016/"
+                  className="text-white"
+                >
+                  Github
+                </a>
+              </li>
+            </ul>
+          )}
         </div>
       </nav>
     </div>

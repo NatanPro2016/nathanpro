@@ -14,9 +14,9 @@ const Project = ({ id, title, description, link, github, img }: props) => {
   const ref = useRef<HTMLLIElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["end end", "end start"],
+    offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["150px", "0px"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0", "150px"]);
 
   return (
     <li
@@ -29,9 +29,9 @@ const Project = ({ id, title, description, link, github, img }: props) => {
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
       </div>
-      <div className="sm:h-[524px] h-[450px] max-w-[622px] overflow-hidden rounded-[6px]">
+      <div className="sm:h-[524px] h-[95vw] max-w-[622px] overflow-hidden rounded-[6px]">
         <motion.div
-          className="relative h-full w-full bottom-[150px]"
+          className="relative h-full w-full bottom-[75px]"
           style={{ y }}
         >
           <Image
@@ -39,7 +39,7 @@ const Project = ({ id, title, description, link, github, img }: props) => {
             alt="project"
             fill
             sizes="(max-width:622px) , 100vw , 1000px"
-            className="h-full w-full object-cover rounded-[6px] mx-[5px] border border-[#ffffff00] "
+            className="h-full w-full object-contain rounded-[6px] mx-[5px] border border-[#ffffff00] "
           />
         </motion.div>
       </div>
@@ -57,8 +57,8 @@ const Project = ({ id, title, description, link, github, img }: props) => {
           <a href={link}>
             <Image
               src="/arrow.png"
-              height={30}
-              width={30}
+              height={25}
+              width={25}
               alt=""
               className="p-1"
             />
@@ -66,8 +66,8 @@ const Project = ({ id, title, description, link, github, img }: props) => {
           <a href={github}>
             <Image
               src="/github.png"
-              height={30}
-              width={30}
+              height={25}
+              width={25}
               alt=""
               className="p-1"
             />

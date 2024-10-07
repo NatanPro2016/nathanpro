@@ -1,13 +1,10 @@
-
 import React from "react";
 import Image from "next/image";
 
 const ProjectScroller = () => {
- 
-
   return (
     <div className="w-full overflow-hidden mask ">
-      <ul className="flex gap-[10px] w-fit scroll-animation">
+      <ul className="flex gap-[10px] w-fit scroll-project p-[10px]">
         <li className="border border-[#ffffff11] w-fit p-[5px] rounded-[10px]">
           <a href="https://landing-pagenft.netlify.app/">
             <div className="flex gap-[6px] p-[5px] ">

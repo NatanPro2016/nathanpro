@@ -68,8 +68,22 @@ body {
 .three {
   box-shadow: -1px -2px 1px #464646c7, 1px 4px 1px #000000c7;
 }
-.scroll-animation {
+.scroll-project {
+  animation: scroll-project 30s linear infinite;
+}
+@keyframes scroll-project {
+  to {
+    transform: translateX(calc(5px - 50%));
+  }
+}
+.scroll-tech {
   animation: scroll-animation 30s linear infinite;
+}
+
+@keyframes scroll-animation {
+  to {
+    transform: translateX(calc(16px - 50%));
+  }
 }
 
 .background {
@@ -77,11 +91,6 @@ body {
 }
 .bg-gradient {
   background: linear-gradient(212deg, #252525 0%, rgba(26, 26, 26, 1) 100%);
-}
-@keyframes scroll-animation {
-  to {
-    transform: translateX(calc(5px - 50%));
-  }
 }
 img {
   max-width: unset;
@@ -176,7 +185,7 @@ span {
 }
 .background-glow {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
   width: 100%;
   padding: 0;
   margin: 0;

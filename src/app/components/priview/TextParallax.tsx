@@ -14,7 +14,7 @@ const TextParallax = () => {
 
   return (
     <div
-      className="min-h-screen w-full flex-col flex items-center justify-center overflow-hidden"
+      className="min-h-screen w-full flex-col flex items-center justify-center overflow-hidden p-2"
       ref={ref}
     >
       <motion.h1 className="heading text-gradiant text-center" style={{ x }}>

@@ -93,7 +93,7 @@ const About = () => {
             <div className="background w-full h-full absolute top-0 left-0 opacity-5 "></div>
             <p className="opacity-80 text-white text-center"> Tech</p>
             <div className="flex  w-full overflow-hidden mask">
-              <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-animation ">
+              <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-tech items-center p-[32px]">
                 <li>
                   <Image height={60} width={60} src="/tech-1.png" alt="" />
                 </li>
@@ -167,7 +167,7 @@ const About = () => {
           {/* github */}
           <a
             href="https://github.com/natanPro2016/"
-            className="flex w-full max-w-[243.19px] overflow h-[200px] relative bg-gradient rounded-[24px] justify-center items-center overflow-hidden"
+            className="flex w-full xl:max-w-[243.19px] max-w-[502px] overflow h-[200px] relative bg-gradient rounded-[24px] justify-center items-center overflow-hidden"
           >
             <div className="background w-full h-full absolute top-0 left-0 w-2/3% opacity-5 "></div>
 
