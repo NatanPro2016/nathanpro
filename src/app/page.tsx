@@ -11,6 +11,7 @@ import TextParallax from "./components/priview/TextParallax";
 import Glass from "./components/priview/Glass";
 
 const inter = Inter({ subsets: ["latin"] });
+
 export default function Home() {
   return (
     <div className={`${inter.className} `}>

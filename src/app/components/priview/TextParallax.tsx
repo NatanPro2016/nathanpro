@@ -26,9 +26,18 @@ const TextParallax = () => {
       >
         Somemone Professional
       </motion.h1>
-      <div className={`translate-y-60 opacity-0 transition-all1 `}>
-        <AnimatedBtn />
-      </div>
+      <motion.div
+        className={`transition-all1 `}
+        style={{ y: x2 }}
+      >
+       <a
+            href="#"
+            className="px-4 mt-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black"
+          >
+            Email Me
+            <img src="/arrow-right.png" alt="" className="w-4" />
+          </a>
+      </motion.div>
     </div>
   );
 };

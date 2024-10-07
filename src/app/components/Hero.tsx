@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import Nav from "./Nav";
+import Lenis from "lenis";
 
 const Hero = () => {
   const background = useRef<HTMLDivElement>(null);
@@ -11,6 +12,16 @@ const Hero = () => {
     background?.current?.style.setProperty("--y", e.clientY + "px");
     console.log();
   };
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <div
       className="flex flex-col h-[705px] w-full text relative"
@@ -29,11 +40,11 @@ const Hero = () => {
         })}
       </div>
 
-      <div className="flex pointer-events-none items-center justify-center flex-col h-full w-full text-center p-4">
+      <div className="flex items-center justify-center flex-col h-full w-full text-center p-4">
         <img
           src="/radial.png"
           alt=""
-          className="h-[657px] max-w-[657px] w-full absolute opacity-5"
+          className="h-[657px] max-w-[657px] w-full absolute pointer-events-none opacity-5"
         />
         <Image
           src={"/profile-image.png"}
@@ -51,10 +62,11 @@ const Hero = () => {
         </p>
         <div className="mt-4">
           <a
-            href=""
-            className="px-4 text-bold  cursor-pointer py-2 rounded-full bg-white text-black"
+            href="#"
+            className="px-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black"
           >
             Email Me
+            <img src="/arrow-right.png" alt="" className="w-4" />
           </a>
         </div>
       </div>

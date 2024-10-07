@@ -4,7 +4,7 @@ import AnimatedBtn from "./AnimatedBtn";
 const Footer = () => {
   return (
     <div className="w-full bg-[#121212] h-[380px] ">
-      <div className="flex w-full justify-center items-center  h-[100px] py-[1px] bg-footer bg-white">
+      <div className="flex w-full justify-center items-center  h-[100px] py-[1px] bg-footer bg-white sticky top-0">
         <div className="w-full h-full  bg-[#121212] justify-center items-center flex gap-2">
           <p className="text-white opacity-80 text-[18px] hidden lg:flex">
             Interested in working with me? Send me a message
@@ -44,7 +44,7 @@ const Footer = () => {
 
         <ul className="flex gap-[20px] w-full justify-center">
           <li>
-            <a href="">
+            <a href="https://github.com/NatanPro2016/NatanPro2016/">
               <img
                 src="/github-social.png"
                 alt=""

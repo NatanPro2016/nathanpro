@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const About = () => {
   const [opend, setOpen] = useState(false);
   return (
-    <div className="w-full bg-dark flex flex-col pb-[90px]">
+    <div className="w-full bg-dark flex flex-col pb-[90px]" id="about">
       <div className="max-w-[1280px] w-full mx-auto mt-[120px] p-4 xl:p-0">
         <h1 className="heading text-gradiant text-center ">About Me</h1>
         {/* first row */}
@@ -161,11 +161,14 @@ const About = () => {
             </div>
           </div>
           {/* github */}
-          <div className="flex w-full max-w-[243.19px] overflow h-[200px] relative bg-gradient rounded-[24px] justify-center items-center overflow-hidden">
+          <a
+            href="https://github.com/natanPro2016/"
+            className="flex w-full max-w-[243.19px] overflow h-[200px] relative bg-gradient rounded-[24px] justify-center items-center overflow-hidden"
+          >
             <div className="background w-full h-full absolute top-0 left-0 w-2/3% opacity-5 "></div>
 
             <img src="./github-big.png" alt="" />
-          </div>
+          </a>
         </div>
       </div>
     </div>

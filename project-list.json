@@ -1,17 +1,17 @@
 [
     {
         "id":1,
-        "title":"encation",
-        "description":" landing page developed with html css and javaScript from figma design ",
-        "link":"https://encantio-web.netlify.app/",
-        "github":"https://github.com/NatanPro2016/encantio",
+        "title":"Landing page nft",
+        "description":"Landing page developed with HTML, CSS, and JavaScript based on a Figma design, with support for both dark mode and light mode. Fully responsive across all devices.",
+        "link":"https://landing-pagenft.netlify.app/",
+        "github":"https://github.com/NatanPro2016/landing-page-nft",
         "img":"/project-1.png"
 
     },
     {
         "id":2,
         "title":"encation",
-        "description":" landing page developed with html css and javaScript from figma design ",
+        "description":"Landing page developed with HTML, CSS, and JavaScript from a Figma design. Includes beautiful animations and is fully responsive across all devices.",
         "link":"https://encantio-web.netlify.app/",
         "github":"https://github.com/NatanPro2016/encantio",
         "img":"/project-2.png"
@@ -19,19 +19,19 @@
     },
     {
         "id":3,
-        "title":"encation",
-        "description":" landing page developed with html css and javaScript from figma design ",
-        "link":"https://encantio-web.netlify.app/",
-        "github":"https://github.com/NatanPro2016/encantio",
+        "title":"Coffe house",
+        "description":"Coffe house manu with react , tailwind and framer motion a challege from devchalleges   ",
+        "link":"https://coffee-shop-ts.netlify.app/",
+        "github":"https://github.com/NatanPro2016/coffee-shop",
         "img":"/project-3.png"
 
     },
     {
         "id":4,
-        "title":"encation",
-        "description":" landing page developed with html css and javaScript from figma design ",
-        "link":"https://encantio-web.netlify.app/",
-        "github":"https://github.com/NatanPro2016/encantio",
+        "title":"20+ projects",
+        "description":"you can find other projects in my git hub",
+        "link":"https://github.com/NatanPro2016/",
+        "github":"https://github.com/NatanPro2016/",
         "img":"/projects.png"
 
     }

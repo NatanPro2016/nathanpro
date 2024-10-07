@@ -49,7 +49,7 @@ const Project = ({ id, title, description, link, github, img }: props) => {
           <h1 className="text-white text-[20px] font-bold capitalize mt-[10px]">
             {title}
           </h1>
-          <p className="text-white mt-[10px] max-w-[305px] opacity-60">
+          <p className="text-white mt-[10px] max-w-[405px] opacity-60">
             {description}
           </p>
         </div>
