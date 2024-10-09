@@ -50,14 +50,14 @@ const Hero = () => {
           alt=""
           height={675}
           width={675}
-          className="h-[657px] max-w-[657px] w-full  absolute pointer-events-none opacity-5"
+          className="h-[657px] max-w-[657px] w-full  absolute pointer-events-none opacity-5 bg-contain"
         />
         <Image
           src={"/zoomed-nathanpro.jpg"}
           alt="nathanPro"
           width={80}
           height={80}
-          className="z-10 rounded-full "
+          className="z-10 rounded-full"
         />
         <h1 className="z-10 heading text-gradiant max-w-[532px]">
           Crafting Engaging Front-End Solutions

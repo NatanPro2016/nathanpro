@@ -66,7 +66,8 @@ const Nav = () => {
           isMobile ? "flex" : "hidden"
         }`}
       >
-        <div className="background w-full h-screen absolute top-0 left-0 opacity-5 z-10"></div>
+        <div className="background w-full h-full absolute top-0 left-0 opacity-5 z-10"></div>
+
         <div
           className={`flex flex-col px-4 w-full h-66 bg-[#242424] transition-all overflow-hidden ${
             openNav && " h-screen transition-all "

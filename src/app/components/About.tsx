@@ -35,7 +35,7 @@ const About = () => {
               alt="nathanpro"
               height={206}
               width={206}
-              className="w-[206px] rounded-full grayscale"
+              className="w-[206px] rounded-full grayscale  transition-all hover:grayscale-0"
             />
           </div>
         </div>
