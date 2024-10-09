@@ -66,14 +66,14 @@ const Nav = () => {
           isMobile ? "flex" : "hidden"
         }`}
       >
-        <div className="background w-full h-full absolute top-0 left-0 opacity-5 z-10"></div>
-
         <div
           className={`flex flex-col px-4 w-full h-66 bg-[#242424] transition-all overflow-hidden ${
             openNav && " h-screen transition-all "
           }`}
           onClick={() => setOpenNav(!openNav)}
         >
+          <div className="background w-screen h-full absolute top-0 left-0 opacity-5 z-10"></div>
+
           <div className="flex justify-between h-[66px] items-center w-full relative z-20">
             <a href="/" className="text-white flex gap-2">
               <Image
