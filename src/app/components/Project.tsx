@@ -31,7 +31,7 @@ const Project = ({ id, title, description, link, github, img }: props) => {
       </div>
       <div className="sm:h-[524px] h-[95vw] max-w-[622px] overflow-hidden rounded-[6px]">
         <motion.div
-          className="relative h-full w-full bottom-[75px]"
+          className="relative h-full w-full bottom-[85px]"
           style={{ y }}
         >
           <Image

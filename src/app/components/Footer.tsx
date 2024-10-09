@@ -56,7 +56,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://www.instagram.com/_nathan___pro/">
               <Image
                 height={25}
                 width={25}
@@ -67,7 +67,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://www.linkedin.com/in/natan-haile-1bb674264/">
               <Image
                 src="/linkedIn.png"
                 height={25}

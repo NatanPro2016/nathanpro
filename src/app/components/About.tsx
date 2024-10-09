@@ -35,7 +35,7 @@ const About = () => {
               alt="nathanpro"
               height={206}
               width={206}
-              className="w-[206px]"
+              className="w-[206px] rounded-full grayscale"
             />
           </div>
         </div>

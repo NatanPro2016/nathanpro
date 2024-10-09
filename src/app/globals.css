@@ -18,6 +18,7 @@ body {
   border-radius: 10px;
 }
 
+
 .text-gradiant {
   background: -webkit-linear-gradient(136deg, #525252, #fff);
   -webkit-background-clip: text;
