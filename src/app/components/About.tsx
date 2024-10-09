@@ -31,7 +31,7 @@ const About = () => {
             <div className="background w-full h-full absolute top-0 left-0 w-2/3% opacity-5"></div>
 
             <Image
-              src="/profile-image.png"
+              src="/profile-nathanPro.jpg"
               alt="nathanpro"
               height={206}
               width={206}
