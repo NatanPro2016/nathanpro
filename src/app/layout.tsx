@@ -24,8 +24,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: "/card.png",
-    title:"Nathan pro web developer portfolio"
+    title: "Nathan pro web developer portfolio",
   },
+
   icons: "/logo.svg",
 };
 
@@ -36,6 +37,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y) {
+                w[c] = w[c] || function() {
+                  (w[c].q = w[c].q || []).push(arguments)
+                }, w[c].l = 1 * new Date();
+                t = l.createElement(a), y = l.getElementsByTagName(a)[0];
+                t.async = 1; t.src = r; y.parentNode.insertBefore(t, y)
+              })(window, document, 'clarity', 'https://www.clarity.ms/tag/ogm1030ckp');
+            `,
+          }}
+        />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

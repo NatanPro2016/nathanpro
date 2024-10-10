@@ -10,6 +10,7 @@ import TextParallax from "./components/priview/TextParallax";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  
   return (
     <div className={`${inter.className} `}>
       <Hero />
