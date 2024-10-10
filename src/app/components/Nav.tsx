@@ -74,6 +74,7 @@ const Nav = () => {
           onClick={() => setOpenNav(!openNav)}
         >
           <div className="background w-screen h-full absolute top-0 left-0 opacity-5 z-10"></div>
+          <div className="background-line w-screen h-[2px] absolute top-0 left-0 opacity-5 z-10"></div>
 
           <div className="flex justify-between h-[66px] items-center w-full relative z-20">
             <a href="/" className="text-white flex gap-2">

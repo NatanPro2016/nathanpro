@@ -18,7 +18,6 @@ body {
   border-radius: 10px;
 }
 
-
 .text-gradiant {
   background: -webkit-linear-gradient(136deg, #525252, #fff);
   -webkit-background-clip: text;
@@ -97,6 +96,9 @@ img {
   max-width: unset;
 }
 .bg-footer {
+  background: radial-gradient(#ffffff, #80808005);
+}
+.background-line {
   background: radial-gradient(#ffffff, #80808005);
 }
 .bg-blur {

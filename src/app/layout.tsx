@@ -17,15 +17,17 @@ export const metadata: Metadata = {
   title: "Nathan pro",
   description:
     "nathan pro web developer |react developer natahan pro | nathan pro 2016 | nathan pro.web",
-    keywords: "webdev , nathanpro , reactDevelper ",
-    twitter: {
-      images:"",
-      description:"Nathan Pro projects , portfolio"
-    },
-    icons: "/logo.svg",
-  
+  keywords: "webdev , nathanpro , reactDevelper ",
+  twitter: {
+    images: "/card.png",
+    description: "Nathan Pro projects , portfolio",
+  },
+  openGraph: {
+    images: "/card.png",
+    title:"Nathan pro web developer portfolio"
+  },
+  icons: "/logo.svg",
 };
-
 
 export default function RootLayout({
   children,
