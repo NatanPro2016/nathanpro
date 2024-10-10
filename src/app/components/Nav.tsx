@@ -29,7 +29,8 @@ const Nav = () => {
             className="w-24"
           />
           <span>
-            Nathan Pro <br />
+            Nathan Pro
+            <br />
             <span className="text-[#ababab9a] font-thin"> Web Developer</span>
           </span>
         </a>

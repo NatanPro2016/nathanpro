@@ -22,7 +22,8 @@ export const metadata: Metadata = {
       images:"",
       description:"Nathan Pro projects , portfolio"
     },
-    icons: "/logo.svg"
+    icons: "/logo.svg",
+  
 };
 
 

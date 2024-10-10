@@ -68,7 +68,7 @@ const Hero = () => {
         </p>
         <div className="mt-4">
           <a
-            href="#"
+            href="mailto:nathanpro.web@gmail.com"
             className="px-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black"
           >
             Email Me

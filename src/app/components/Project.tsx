@@ -24,14 +24,14 @@ const Project = ({ id, title, description, link, github, img }: props) => {
       ref={ref}
       key={id}
     >
-      <div className="flex gap-[6px] p-[5px] m-[5px] ">
+      <div className="flex gap-[6px] p-[5px] m-[5px] items-center">
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
       </div>
       <div className="sm:h-[524px] h-[95vw] max-w-[622px] overflow-hidden rounded-[6px]">
         <motion.div
-          className="relative h-full w-full bottom-[85px]"
+          className="relative h-full w-full bottom-[105px]"
           style={{ y }}
         >
           <Image
