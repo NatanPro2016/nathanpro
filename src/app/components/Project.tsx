@@ -59,7 +59,7 @@ const Project = ({ id, title, description, link, github, img }: props) => {
               src="/arrow.png"
               height={25}
               width={25}
-              alt=""
+              alt="got to the web | Go"
               className="p-1"
             />
           </a>
@@ -68,7 +68,7 @@ const Project = ({ id, title, description, link, github, img }: props) => {
               src="/github.png"
               height={25}
               width={25}
-              alt=""
+              alt="Go to git hub | githubi icon"
               className="p-1"
             />
           </a>

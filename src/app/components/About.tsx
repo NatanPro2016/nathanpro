@@ -171,7 +171,12 @@ const About = () => {
           >
             <div className="background w-full h-full absolute top-0 left-0 w-2/3% opacity-5 "></div>
 
-            <Image height={60} width={60} src="/github-big.png" alt="" />
+            <Image
+              height={60}
+              width={60}
+              src="/github-big.png"
+              alt="my-git-hub-profile"
+            />
           </a>
         </div>
       </div>

@@ -50,7 +50,7 @@ const Footer = () => {
                 height={25}
                 width={25}
                 src="/github-social.png"
-                alt=""
+                alt="my-github-profile"
                 className="opacity-80 hover:opacity-100 transition-all"
               />
             </a>
@@ -61,7 +61,7 @@ const Footer = () => {
                 height={25}
                 width={25}
                 src="/instagram.png"
-                alt=""
+                alt="my-instagram-profile"
                 className="opacity-80 hover:opacity-100 transition-all"
               />
             </a>
@@ -72,7 +72,7 @@ const Footer = () => {
                 src="/linkedIn.png"
                 height={25}
                 width={25}
-                alt=""
+                alt="my-linked-in-profile"
                 className="opacity-80 hover:opacity-100 transition-all"
               />
             </a>

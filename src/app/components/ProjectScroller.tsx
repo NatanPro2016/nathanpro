@@ -24,7 +24,7 @@ const ProjectScroller = () => {
                     alt="project"
                     fill
                     sizes="(max-width:545px) , 100vw , 1000px"
-                    className="h-[374px] w-[545px] object-cover rounded-[6px]"
+                    className="h-[374px] w-[545px] object-cover aspect-auto rounded-[6px]"
                   />
                 </div>
               </a>

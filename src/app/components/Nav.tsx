@@ -25,7 +25,7 @@ const Nav = () => {
             height={96}
             width={40.56}
             src="/logo.svg"
-            alt=""
+            alt="logo |home"
             className="w-24"
           />
           <span>
@@ -82,7 +82,7 @@ const Nav = () => {
                 height={96}
                 width={40.56}
                 src="/logo.svg"
-                alt=""
+                alt="logo | home"
                 className="w-24"
               />
               <span className="sm:block hidden ">
