@@ -6,13 +6,14 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 
 import TextParallax from "./components/priview/TextParallax";
+import Loading from "./components/Loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  
   return (
     <div className={`${inter.className} `}>
+      <Loading />
       <Hero />
       <Projects />
       <About />
