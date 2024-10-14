@@ -31,7 +31,7 @@ const Nav = () => {
           <span>
             Nathan Pro
             <br />
-            <span className="text-[#ababab9a] font-thin"> Web Developer</span>
+            <span className="text-[#ababab9a] font-normal"> Web Developer</span>
           </span>
         </a>
         <ul className="flex gap-[40px]">
@@ -63,7 +63,7 @@ const Nav = () => {
       </nav>
 
       <nav
-        className={`fixed w-full h-[66px] justify-between  pb-[2px] bg-footer transition-all z-40 ${
+        className={`fixed w-full h-[66px] justify-between  pb-[2px] bg-footer transition-all z-10 ${
           isMobile ? "flex" : "hidden"
         }`}
       >
@@ -87,7 +87,7 @@ const Nav = () => {
               />
               <span className="sm:block hidden ">
                 Nathan Pro <br />
-                <span> Web Developer</span>
+                <span className="text-[#ababab9a] font-normal"> Web Developer</span>
               </span>
             </a>
             <div

@@ -232,10 +232,12 @@ span {
 .background-glow div::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(39, 39, 39, 0.072);
   background-attachment: fixed;
   background-size: cover;
-  /* filter: blur(10px); */
+  backdrop-filter: blur(10x);
 }

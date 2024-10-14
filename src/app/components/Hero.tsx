@@ -14,7 +14,6 @@ const Hero = () => {
   const handleHover = (e: CustomMouseEvent) => {
     background?.current?.style.setProperty("--x", e.clientX + "px");
     background?.current?.style.setProperty("--y", e.clientY + "px");
-    console.log();
   };
   useEffect(() => {
     const lenis = new Lenis();
@@ -28,7 +27,7 @@ const Hero = () => {
   }, []);
   return (
     <div
-      className="flex flex-col h-[705px] w-full text relative"
+      className="flex flex-col h-[705px] w-full text relative hero"
       ref={background}
       onMouseMove={handleHover}
     >

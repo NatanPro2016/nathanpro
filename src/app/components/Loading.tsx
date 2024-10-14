@@ -17,12 +17,11 @@ const Loading = () => {
             className="h-screen w-full flex items-center justify-center fixed bg-light-background z-20"
             animate={{ opacity: 1 }}
             exit={{ scaleX: 0.8, translateY: "-100%" }}
-            
           >
             <motion.p
               style={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="text-[24px] text-white"
+              className="text-[20px] sm:text-[24px]  text-white"
             >
               &nbsp; Fast &#44; &nbsp;
             </motion.p>
@@ -30,7 +29,7 @@ const Loading = () => {
               transition={{ delay: 0.5 }}
               style={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="text-[24px] text-white"
+              className="text-[20px] sm:text-[24px]  text-white"
             >
               &nbsp;Responsive &#44; &nbsp;
             </motion.p>
@@ -39,7 +38,7 @@ const Loading = () => {
               transition={{ delay: 1 }}
               style={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="text-[24px] text-white"
+              className="text-[20px] sm:text-[24px]  text-white"
             >
               &nbsp; Website
             </motion.p>

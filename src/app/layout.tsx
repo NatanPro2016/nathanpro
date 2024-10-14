@@ -38,6 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="7zom9sT8t9M5mvY7miiK_BB8XwR3VBysu-sKA2_vs4E"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
