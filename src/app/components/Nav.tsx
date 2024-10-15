@@ -16,7 +16,7 @@ const Nav = () => {
   return (
     <div>
       <nav
-        className={`flex justify-between max-w-[1280px] w-full mx-auto p-4 items-center ${
+        className={`flex justify-between max-w-[1280px] z-50 w-full mx-auto p-4 items-center ${
           isMobile && "hidden"
         }`}
       >
@@ -63,7 +63,7 @@ const Nav = () => {
       </nav>
 
       <nav
-        className={`fixed w-full h-[66px] justify-between  pb-[2px] bg-footer transition-all z-10 ${
+        className={`fixed w-full h-[66px] justify-between z-50 pb-[2px] bg-footer transition-all ${
           isMobile ? "flex" : "hidden"
         }`}
       >
@@ -87,7 +87,10 @@ const Nav = () => {
               />
               <span className="sm:block hidden ">
                 Nathan Pro <br />
-                <span className="text-[#ababab9a] font-normal"> Web Developer</span>
+                <span className="text-[#ababab9a] font-normal">
+                  {" "}
+                  Web Developer
+                </span>
               </span>
             </a>
             <div
@@ -115,7 +118,7 @@ const Nav = () => {
                   href="#about"
                   className="text-white opacity-80 hover:opacity-100 transition-all"
                 >
-                  abouit
+                  About
                 </a>
               </li>
               <li>
