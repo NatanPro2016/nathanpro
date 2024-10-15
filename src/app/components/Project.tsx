@@ -54,20 +54,12 @@ const Project = ({ id, title, description, link, github, img }: props) => {
           </p>
         </div>
         <div className="links h-full flex flex-col justify-center gap-4 z-20">
-          <a href={link}>
-            <Image
-              src="/arrow.png"
-              height={25}
-              width={25}
-              alt="got to the web | Go"
-              className="p-1"
-            />
+          <a href={link} className="p-2">
+            <img src="/arrow.png" alt="got to the web | Go" className="p-1" />
           </a>
-          <a href={github}>
-            <Image
+          <a href={github} className="p-2">
+            <img
               src="/github.png"
-              height={25}
-              width={25}
               alt="Go to git hub | githubi icon"
               className="p-1"
             />

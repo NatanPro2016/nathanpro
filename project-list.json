@@ -21,8 +21,8 @@
         "id":3,
         "title":"Coffe house",
         "description":"Coffe house manu with react , tailwind and framer motion a challege from devchalleges   ",
-        "link":"https://react-game-ts.netlify.app/",
-        "github":"https://github.com/NatanPro2016/game",
+        "link":"https://coffee-shop-ts.netlify.app/",
+        "github":"https://github.com/NatanPro2016/coffee-shop",
         "img":"/project-3.png"
 
     },
@@ -39,8 +39,8 @@
         "id":5,
         "title":"React Game",
         "description":" Built with React, this application lets you play a fun and interactive memory game.",
-        "link":"https://coffee-shop-ts.netlify.app/",
-        "github":"https://github.com/NatanPro2016/coffee-shop",
+        "link":"https://react-game-ts.netlify.app/",
+        "github":"https://github.com/NatanPro2016/game",
         "img":"/project-5.png"
 
     },
