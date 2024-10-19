@@ -34,16 +34,18 @@ const Project = ({ id, title, description, link, github, img }: props) => {
           className="relative h-full w-full bottom-[105px]"
           style={{ y }}
         >
-          <Image
-            src={img}
-            alt="project"
-            fill
-            sizes="(max-width:622px) , 100vw , 1000px"
-            className="h-full w-full object-contain rounded-[6px] mx-[5px] border border-[#ffffff00] "
-          />
+          <a href={link} target="_blank">
+            <Image
+              src={img}
+              alt="project"
+              fill
+              sizes="(max-width:622px) , 100vw , 1000px"
+              className="h-full w-full object-contain rounded-[6px] mx-[5px] border border-[#ffffff00] "
+            />
+          </a>
         </motion.div>
       </div>
-      <div className="flex w-full justify-between items-center gap-2 bg-black px-[24px] mt-[-96px] z-10 relative min-h-[106px] p-2  ">
+      <div className="flex w-full justify-between items-center gap-2 bg-black px-[24px] pb-[24px] mt-[-96px] z-10 relative min-h-[106px]  ">
         <div className=" w-full h-full background flex absolute top-0 left-0 z-10 opacity-5"></div>
         <div className="flex flex-col relative z-20">
           <h1 className="text-white text-[20px] font-bold capitalize mt-[10px]">
@@ -53,15 +55,15 @@ const Project = ({ id, title, description, link, github, img }: props) => {
             {description}
           </p>
         </div>
-        <div className="links h-full flex flex-col justify-center gap-4 z-20">
-          <a href={link} className="p-2">
-            <img src="/arrow.png" alt="got to the web | Go" className="p-1" />
+        <div className="links h-full flex flex-col justify-center gap-4 z-20 mt-[10px]">
+          <a href={link} className="p-2" target="_blank">
+            <img src="/arrow.png" alt="got to the web | Go" className="w-5" />
           </a>
-          <a href={github} className="p-2">
+          <a href={github} className="p-2" target="_blank">
             <img
               src="/github.png"
               alt="Go to git hub | githubi icon"
-              className="p-1"
+              className="md:w-5 w-3"
             />
           </a>
         </div>

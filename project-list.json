@@ -2,7 +2,7 @@
     {
         "id":1,
         "title":"Landing page nft",
-        "description":"Landing page developed with HTML, CSS, and JavaScript based on a Figma design, with support for both dark mode and light mode. Fully responsive across all devices.",
+        "description":"Landing page developed with HTML, CSS, and JavaScript based on a Figma design, with support for both dark mode and light mode. ",
         "link":"https://landing-pagenft.netlify.app/",
         "github":"https://github.com/NatanPro2016/landing-page-nft",
         "img":"/project-1.png"
