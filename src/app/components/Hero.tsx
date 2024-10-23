@@ -49,7 +49,7 @@ const Hero = () => {
           alt=""
           height={675}
           width={675}
-          className="h-[657px] max-w-[657px] w-full  absolute pointer-events-none opacity-5 bg-contain"
+          className="h-[657px] max-w-[657px] w-full  absolute pointer-events-none opacity-5 object-contain"
         />
         <Image
           src={"/zoomed-nathanpro.jpg"}
