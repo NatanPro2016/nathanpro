@@ -64,13 +64,12 @@ const Project = ({ id, title, description, link, github, img }: props) => {
               src="/github.png"
               alt="Go to git hub | githubi icon"
               className="md:w-5 w-3 object-conta"
-
             />
           </a>
         </div>
       </div>
     </li>
   );
-};bun 
+};
 
 export default Project;
