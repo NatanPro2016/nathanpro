@@ -30,11 +30,11 @@ const Project = ({ id, title, description, link, github, img }: props) => {
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
       </div>
       <div className="sm:h-[524px] h-[95vw] max-w-[622px] overflow-hidden rounded-[6px]">
-        <motion.div
-          className="relative h-full w-full bottom-[105px]"
-          style={{ y }}
-        >
-          <a href={link} target="_blank">
+        <a href={link} target="_blank">
+          <motion.div
+            className="relative h-full w-full bottom-[105px]"
+            style={{ y }}
+          >
             <Image
               src={img}
               alt="project"
@@ -42,8 +42,8 @@ const Project = ({ id, title, description, link, github, img }: props) => {
               sizes="(max-width:622px) , 100vw , 1000px"
               className="h-full w-full object-contain rounded-[6px] mx-[5px] border border-[#ffffff00] "
             />
-          </a>
-        </motion.div>
+          </motion.div>
+        </a>
       </div>
       <div className="flex w-full justify-between items-center gap-2 bg-black px-[24px] pb-[24px] mt-[-96px] z-10 relative min-h-[106px]  ">
         <div className=" w-full h-full background flex absolute top-0 left-0 z-10 opacity-5"></div>

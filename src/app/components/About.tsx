@@ -95,7 +95,7 @@ const About = () => {
             <div className="flex  w-full overflow-hidden mask">
               <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-tech items-center p-[32px]">
                 <li>
-                  <Image height={60} width={60} src="/tech-1.png" alt="" />
+                  <Image height={60} width={60} src="/tech-1.png" alt="" className="w-auto"/>
                 </li>
                 <li>
                   <Image height={60} width={60} src="/tech-2.png" alt="" />
