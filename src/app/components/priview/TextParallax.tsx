@@ -18,13 +18,13 @@ const TextParallax = () => {
       ref={ref}
     >
       <motion.h1 className="heading text-gradiant text-center" style={{ x }}>
-        Are You Rady To Hire
+        Are You Ready To Hire
       </motion.h1>
       <motion.h1
         className="heading text-gradiant text-center "
         style={{ x: x2 }}
       >
-        Somemone Professional
+        Someone Professional
       </motion.h1>
       <motion.div className={`transition-all1 `} style={{ y: x2 }}>
         <a

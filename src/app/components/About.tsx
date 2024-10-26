@@ -54,14 +54,14 @@ const About = () => {
 
             <p className="text-[48px] font-bold"> 4+</p>
             <p className="opacity-80 text-center">
-              Learing <br /> Years
+              Learning <br /> Years
             </p>
           </div>
           <div className="flex min-w-[140px] w-full xl:max-w-[761.59px] p-4 xl:p-0 min-h-[250px] h-full relative bg-gradient rounded-[24px] items-center justify-center text-white overflow-hidden flex-col">
             <div className="background w-full h-full absolute top-0 left-0 opacity-5 "></div>
 
             <p className="opacity-80 text-start xl:max-w-[603.87px] xl:ml-[64px]">
-              since high school learing porgraming the have TEVT deploma in web
+              since High-school learing programming the have TEVT deploma in web
               development and database adminsartion
             </p>
           </div>
@@ -95,7 +95,13 @@ const About = () => {
             <div className="flex  w-full overflow-hidden mask">
               <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-tech items-center p-[32px]">
                 <li>
-                  <Image height={60} width={60} src="/tech-1.png" alt="" className="w-auto"/>
+                  <Image
+                    height={60}
+                    width={60}
+                    src="/tech-1.png"
+                    alt=""
+                    className="w-auto"
+                  />
                 </li>
                 <li>
                   <Image height={60} width={60} src="/tech-2.png" alt="" />
