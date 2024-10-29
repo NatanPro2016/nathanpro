@@ -6,10 +6,8 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-html,
 body {
   background-color: #1a1a1a;
-  overscroll-behavior: none;
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(255 255 255 / 10%);
