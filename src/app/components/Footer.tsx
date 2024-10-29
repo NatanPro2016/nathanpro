@@ -21,20 +21,20 @@ const Footer = () => {
                 href="#"
                 className="text-[#827D7D] text-[16px] hover:text-white transition-all "
               >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="text-[#827D7D] text-[16px] hover:text-white transition-all "
+              >
                 Projects
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="text-[#827D7D] text-[16px] hover:text-white transition-all "
-              >
-                Service
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
+                href="#about"
                 className="text-[#827D7D] text-[16px] hover:text-white transition-all"
               >
                 About
