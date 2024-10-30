@@ -43,7 +43,7 @@ const Hero = () => {
       </div>
       <Nav />
 
-      <div className="flex items-center justify-center flex-col h-full w-full text-center p-4">
+      <div className="flex items-center justify-center flex-col h-full w-full text-center relatve z-10 p-4">
         <Image
           src="/radial.png"
           alt=""
@@ -65,10 +65,10 @@ const Hero = () => {
           I build modern, intuitive websites that are fast, responsive, and
           designed to deliver seamless user experiences across devices
         </p>
-        <div className="mt-4">
+        <div className="mt-4 relatve z-10">
           <a
             href="mailto:nathanpro.web@gmail.com"
-            className="px-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black"
+            className="px-4 text-bold flex items-center gap-2 hover:gap-4 transition-all cursor-pointer py-2 rounded-full bg-white text-black relative z-10"
           >
             Email Me
             <Image
