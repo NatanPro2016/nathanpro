@@ -14,9 +14,9 @@ const Nav = () => {
   }, []);
 
   return (
-    <div>
+    <div className="z-50">
       <nav
-        className={`flex justify-between max-w-[1280px] z-50 w-full mx-auto p-4 items-center ${
+        className={`flex justify-between relatve z-100 max-w-[1280px] z-50 w-full mx-auto p-4 items-center ${
           isMobile && "hidden"
         }`}
       >

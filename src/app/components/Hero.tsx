@@ -31,8 +31,7 @@ const Hero = () => {
       ref={background}
       onMouseMove={handleHover}
     >
-      <Nav />
-      <div className="bg-light-background gap-[4px] h-full w-full absolute z-[-100] overflow-hidden background-glow ">
+      <div className="bg-light-background gap-[4px] h-full z-10 w-full absolute overflow-hidden background-glow ">
         {[...Array(300)].map((_, i) => {
           return (
             <div
@@ -42,6 +41,7 @@ const Hero = () => {
           );
         })}
       </div>
+      <Nav />
 
       <div className="flex items-center justify-center flex-col h-full w-full text-center p-4">
         <Image
