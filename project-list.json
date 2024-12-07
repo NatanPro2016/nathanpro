@@ -1,6 +1,16 @@
 [
     {
         "id":1,
+        "title":"Exo ape",
+        "description":"clone of the famous awarded website exo ape with cool animations ",
+        "link":"https://exoape-react.netlify.app/",
+        "github":"https://github.com/NatanPro2016/exoape",
+        "img":"/project-7.png",
+        "brand_new":true
+    },
+
+    {
+        "id":2,
         "title":"Landing page nft",
         "description":"Landing page developed with HTML, CSS, and JavaScript based on a Figma design, with support for both dark mode and light mode. ",
         "link":"https://landing-pagenft.netlify.app/",
@@ -9,7 +19,7 @@
 
     },
     {
-        "id":2,
+        "id":3,
         "title":"encation",
         "description":"Landing page developed with HTML, CSS, and JavaScript from a Figma design. Includes beautiful animations and is fully responsive across all devices.",
         "link":"https://encantio-web.netlify.app/",
@@ -18,7 +28,7 @@
 
     },
     {
-        "id":3,
+        "id":4,
         "title":"Coffe house",
         "description":"Coffe house manu with react , tailwind and framer motion a challege from devchalleges   ",
         "link":"https://coffee-shop-ts.netlify.app/",
@@ -27,7 +37,7 @@
 
     },
     {
-        "id":4,
+        "id":5,
         "title":"Mintin",
         "description":"Developed with pure HTML, CSS, and JavaScript, featuring parallax scroll animation.",
         "link":"https://mntn-hicking-guide.netlify.app/",
@@ -36,7 +46,7 @@
 
     },
     {
-        "id":5,
+        "id":6,
         "title":"React Game",
         "description":" Built with React, this application lets you play a fun and interactive memory game.",
         "link":"https://react-game-ts.netlify.app/",
@@ -45,7 +55,7 @@
 
     },
     {
-        "id":6,
+        "id":7,
         "title":"20+ projects",
         "description":"You can find other projects in my git-hub",
         "link":"https://github.com/NatanPro2016/",

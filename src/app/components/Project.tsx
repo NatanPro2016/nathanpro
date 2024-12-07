@@ -9,8 +9,17 @@ interface props {
   link: string;
   github: string;
   img: string;
+  brand_new?: boolean;
 }
-const Project = ({ id, title, description, link, github, img }: props) => {
+const Project = ({
+  id,
+  title,
+  description,
+  link,
+  github,
+  img,
+  brand_new,
+}: props) => {
   const ref = useRef<HTMLLIElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -29,7 +38,12 @@ const Project = ({ id, title, description, link, github, img }: props) => {
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
         <div className="h-2 w-2 bg-[#ffffff28] rounded-full "></div>
       </div>
-      <div className="sm:h-[524px] h-[95vw] max-w-[622px] overflow-hidden rounded-[6px]">
+      <div className="sm:h-[524px] h-[95vw] max-w-[622px] overflow-hidden rounded-[6px] relative">
+        {brand_new && (
+          <div className="absolute text-white -ml-14 mt-6 w-48 top-0 h-10 -rotate-45 flex z-10 justify-center items-center bg-[#D91656]">
+            New
+          </div>
+        )}
         <a href={link} target="_blank">
           <motion.div
             className="relative h-full w-full bottom-[105px]"
