@@ -2,7 +2,7 @@
     {
         "id":1,
         "title":"Exo ape",
-        "description":"clone of the famous awarded website exo ape with cool animations ",
+        "description":"I recreated the award-winning ExoApe website, capturing its sleek animations and dynamic interactions to showcase my ability to replicate professional-grade designs.",
         "link":"https://exoape-react.netlify.app/",
         "github":"https://github.com/NatanPro2016/exoape",
         "img":"/project-7.png",
