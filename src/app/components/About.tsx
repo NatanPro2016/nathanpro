@@ -112,7 +112,7 @@ const About = () => {
               <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-tech items-center p-[32px] ">
                 {tech.map((item) => {
                   return (
-                    <li>
+                    <li key={item}>
                       <Image height={60} width={60} src={item} alt="" />
                     </li>
                   );
@@ -121,7 +121,7 @@ const About = () => {
                 {/* for the  loop */}
                 {tech.map((item) => {
                   return (
-                    <li>
+                    <li key={item}>
                       <Image height={60} width={60} src={item} alt="" />
                     </li>
                   );
