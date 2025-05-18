@@ -11,11 +11,13 @@
 
     {
         "id":2,
-        "title":"Landing page nft",
-        "description":"Landing page developed with HTML, CSS, and JavaScript based on a Figma design, with support for both dark mode and light mode. ",
-        "link":"https://landing-pagenft.netlify.app/",
-        "github":"https://github.com/NatanPro2016/landing-page-nft",
-        "img":"/project-1.png"
+        "title":"Fit Forge",
+        "description":"A full-stack Laravel project designed with multi-role login functionality, allowing different user roles (e.g., admin, user, manager) to securely access and interact with the system based on their permissions ",
+        "link":"https://github.com/NatanPro2016/fit-forge",
+        "github":"https://github.com/NatanPro2016/fit-forge",
+        "img":"/project-8.png",
+        "full_stack" :true
+    
 
     },
     {
@@ -56,6 +58,16 @@
     },
     {
         "id":7,
+        "title":"Landing page nft",
+        "description":"Landing page developed with HTML, CSS, and JavaScript based on a Figma design, with support for both dark mode and light mode. ",
+        "link":"https://landing-pagenft.netlify.app/",
+        "github":"https://github.com/NatanPro2016/landing-page-nft",
+        "img":"/project-1.png"
+
+
+    },
+    {
+        "id":8,
         "title":"20+ projects",
         "description":"You can find other projects in my git-hub",
         "link":"https://github.com/NatanPro2016/",

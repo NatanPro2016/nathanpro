@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <About />
-      {/* <Parallax /> */}
+
       {/* <ThreeD />
       <Glass /> */}
       <TextParallax />

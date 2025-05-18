@@ -59,11 +59,13 @@ const Hero = () => {
           className="z-10 rounded-full"
         />
         <h1 className="z-10 heading text-gradiant max-w-[532px]">
-          Crafting Engaging Front-End Solutions
+          Bringing Ideas to Life, Front to Back
         </h1>
-        <p className="z-10 max-w-[402px] text-center text-white mt-[16px]">
-          I build modern, intuitive websites that are fast, responsive, and
-          designed to deliver seamless user experiences across devices
+        <p className="z-10 max-w-[502px] text-center text-white mt-[16px]">
+          I love building modern, intuitive websites and powerful back-end
+          systems that work seamlessly together. From crafting smooth user
+          experiences to making everything run fast and secure, I make sure
+          every piece fits perfectly.
         </p>
         <div className="mt-4 relatve z-10">
           <a

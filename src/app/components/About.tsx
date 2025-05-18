@@ -4,6 +4,22 @@ import Image from "next/image";
 import React from "react";
 
 const About = () => {
+  const tech = [
+    "/tech-1.png",
+    "/tech-2.png",
+    "/tech-3.png",
+    "/tech-4.png",
+    "/tech-5.png",
+    "/tech-6.png",
+    "/tech-7.png",
+    "/tech-8.png",
+    "/tech-9.png",
+    "/tech-10.png",
+    "/tech-11.png",
+    "/tech-12.png",
+    "/tech-13.png",
+    "/tech-14.png",
+  ];
   return (
     <div className="w-full bg-dark flex flex-col pb-[90px]" id="about">
       <div className="max-w-[1280px] w-full mx-auto mt-[120px] p-4 xl:p-0">
@@ -93,80 +109,23 @@ const About = () => {
             <div className="background w-full h-full absolute top-0 left-0 opacity-5 "></div>
             <p className="opacity-80 text-white text-center"> Tech</p>
             <div className="flex  w-full overflow-hidden mask">
-              <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-tech items-center p-[32px]">
-                <li>
-                  <Image
-                    height={60}
-                    width={60}
-                    src="/tech-1.png"
-                    alt=""
-                    className="w-auto"
-                  />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-2.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-3.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-4.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-5.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-6.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-7.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-8.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-9.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-10.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-11.png" alt="" />
-                </li>
-                {/* for the loop */}
-                <li>
-                  <Image height={60} width={60} src="/tech-1.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-2.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-3.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-4.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-5.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-6.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-7.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-8.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-9.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-10.png" alt="" />
-                </li>
-                <li>
-                  <Image height={60} width={60} src="/tech-11.png" alt="" />
-                </li>
+              <ul className="flex gap-[32px] w-fit flex-nowrap mt-[60px] scroll-tech items-center p-[32px] ">
+                {tech.map((item) => {
+                  return (
+                    <li>
+                      <Image height={60} width={60} src={item} alt="" />
+                    </li>
+                  );
+                })}
+
+                {/* for the  loop */}
+                {tech.map((item) => {
+                  return (
+                    <li>
+                      <Image height={60} width={60} src={item} alt="" />
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

@@ -27,6 +27,7 @@ body {
 }
 .heading {
   font-size: 56px;
+  line-height: 59px;
   font-weight: 500;
 }
 @media (max-width: 1100px) {
@@ -37,11 +38,13 @@ body {
 @media (max-width: 900px) {
   .heading {
     font-size: 41px;
+    line-height: 46px;
   }
 }
 @media (max-width: 600px) {
   .heading {
     font-size: 36px;
+    line-height: 38px;
   }
 }
 .nav-line {
@@ -80,6 +83,9 @@ body {
 }
 .scroll-tech {
   animation: scroll-animation 30s linear infinite;
+}
+.scroll-tech:hover {
+  animation-play-state: paused;
 }
 
 @keyframes scroll-animation {

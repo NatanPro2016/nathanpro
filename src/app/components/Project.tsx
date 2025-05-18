@@ -10,6 +10,7 @@ interface props {
   github: string;
   img: string;
   brand_new?: boolean;
+  full_stack?: boolean;
 }
 const Project = ({
   id,
@@ -19,6 +20,7 @@ const Project = ({
   github,
   img,
   brand_new,
+  full_stack,
 }: props) => {
   const ref = useRef<HTMLLIElement>(null);
   const { scrollYProgress } = useScroll({
@@ -42,6 +44,11 @@ const Project = ({
         {brand_new && (
           <div className="absolute text-white -ml-14 mt-6 w-48 top-0 h-10 -rotate-45 flex z-10 justify-center items-center bg-[#D91656]">
             New
+          </div>
+        )}
+        {full_stack && (
+          <div className="absolute text-white -ml-14 mt-6 w-48 top-0 h-10 -rotate-45 flex z-10 justify-center items-center bg-[#52a447]">
+            Full Stack
           </div>
         )}
         <a href={link} target="_blank">
